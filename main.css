@@ -5,10 +5,9 @@ body {
   line-height: 1.6em;
 }
 
-#article{
-  display: flex;
-  align-items: center;
-  margin: 0;
+header {
+  padding: 20px 0;
+  position: relative;
 }
 
 header .row,
@@ -36,25 +35,28 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('https://reformedforum.org/wp-content/blogs.dir/1/files/2016/06/book.jpg');
+  background-image: url('https://w-dog.net/wallpapers/14/14/409330437622484/mood-morning-morning-table-summer-cup-saucer-smartphone-headphones-book-book-book-knowledge-teaching-light-and-ignorance-is-darkness-good-idea-positive-background-blur-bokeh-wallpaper.jpg');
   background-size: cover;
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
+.jumbotron h2, h3{
+  padding: 0 5em;
+  margin: 4em;
+}
+
 .jumbotron h2 {
+  padding-bottom: 0.5em;
   font-size: 3em;
   font-weight: 700;
   margin: 0;
-  color: #fff;
 }
 
 .jumbotron h3 {
   margin: 0 0 20px;
-  padding: 20px;
   font-size: 1.50em;
-  color: #fff;
 }
 
 section .row img {
