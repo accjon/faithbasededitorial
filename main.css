@@ -38,13 +38,8 @@ header p {
   align-items: center;
   background-image: url('https://w-dog.net/wallpapers/14/14/409330437622484/mood-morning-morning-table-summer-cup-saucer-smartphone-headphones-book-book-book-knowledge-teaching-light-and-ignorance-is-darkness-good-idea-positive-background-blur-bokeh-wallpaper.jpg');
   background-size: cover;
-<<<<<<< HEAD
-  color: #7c12a7;
-  height: 500px;
-=======
   color: #ffffff;
   height: auto;
->>>>>>> 9be50126c0dcc4f2e40d50eda179051e71e9b859
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -142,7 +137,6 @@ footer li img {
   height: 32px;
 }
 
-<<<<<<< HEAD
 .navbar{
   background-color: #7c12a7;
   color: white;
@@ -167,7 +161,8 @@ footer li img {
 
 .navbar-brand {
   font-size: 1.5em;
-=======
+}
+
 #faq h3 {
   margin: 0px;
   padding-left: 0px;
@@ -182,5 +177,4 @@ footer li img {
 #faq .article img {
   width:200px;
   height: auto;
->>>>>>> 9be50126c0dcc4f2e40d50eda179051e71e9b859
 }
