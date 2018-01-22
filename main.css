@@ -36,26 +36,27 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('https://w-dog.net/wallpapers/14/14/409330437622484/mood-morning-morning-table-summer-cup-saucer-smartphone-headphones-book-book-book-knowledge-teaching-light-and-ignorance-is-darkness-good-idea-positive-background-blur-bokeh-wallpaper.jpg');
+  background-image: url('pile-of-books_0.jpg');
   background-size: cover;
-  color: #ffffff;
+  color: #7c12a7;
   height: auto;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
 .jumbotron h2, h3{
-  padding: 0 5em;
+  padding-right: 15%;
+  padding-left: 5%;
 }
 
 .jumbotron h2 {
   padding-bottom: 0.5em;
   font-size: 2.5em;
   font-weight: 700;
-  color: white;
+
 }
 
 .jumbotron h3 {
-  margin: 0 2em 0 2em;
+ 
   font-size: 1.25em;
   font-weight: 300;
 }
@@ -148,6 +149,10 @@ footer li img {
   color: white;
 }
 
+.navbar-inverse .navbar-nav {
+  margin: 1em;
+}
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
   background-color: rgb(156, 103, 156);
 }
@@ -155,8 +160,7 @@ footer li img {
 .navbar p{
   color: white;
   font-size: .6em;
-  margin: 0;
-  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .navbar-brand {
