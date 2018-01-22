@@ -1,6 +1,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   line-height: 1.6em;
 }
@@ -8,6 +9,7 @@ body {
 header {
   padding: 20px 0;
   position: relative;
+  font-family: 'Raleway', sans-serif;
 }
 
 header .row,
@@ -46,6 +48,7 @@ header p {
 .jumbotron h2, h3{
   padding-right: 15%;
   padding-left: 5%;
+  font-size: 100%;
 }
 
 .jumbotron h2 {
@@ -182,3 +185,4 @@ footer li img {
   width:200px;
   height: auto;
 }
+
