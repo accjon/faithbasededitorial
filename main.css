@@ -42,12 +42,9 @@ header p {
   background-size: cover;
   color: #7c12a7;
   height: auto;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
-}
-
-.jumbotron h2, h3{
-  padding-right: 15%;
-  padding-left: 5%;
+  text-shadow: 0.25px 0.25px 0.25px white;
+  padding-right: 20%;
+  padding-left: 10%;
   font-size: 100%;
 }
 
@@ -60,7 +57,7 @@ header p {
 
 .jumbotron h3 {
  
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: 300;
 }
 
@@ -142,14 +139,14 @@ footer li img {
 }
 
 .navbar{
-  background-color: #7c12a7;
-  color: white;
+  background-color: white;
+  color: #7c12a7;
   padding-bottom: 1em;
   margin: 0;
 }
 
 .navbar-inverse .navbar-brand{
-  color: white;
+  color: #7c12a7;
 }
 
 .navbar-inverse .navbar-nav {
@@ -160,8 +157,13 @@ footer li img {
   background-color: rgb(156, 103, 156);
 }
 
+.navbar-inverse .navbar-nav>li>a:hover
+{
+  color:#7c12a7;
+}
+
 .navbar p{
-  color: white;
+  color: #7c12a7;
   font-size: .6em;
   margin-bottom: 5px;
 }
