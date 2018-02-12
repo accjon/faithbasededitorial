@@ -192,3 +192,32 @@ form {
   display: block;
   margin: 20px;
 }
+
+
+input[type=text] {
+  border: 1px dotted #999;
+  border-radius: 0;
+  font-family : inherit;
+  font-size   : 100%;
+  -webkit-appearance: none;
+  width : 100%;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+textarea {
+  border: 1px dotted #999;
+  border-radius: 0;
+  font-family : inherit;
+  font-size   : 100%;
+  -webkit-appearance: none;
+  width : 100%;
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}

@@ -30,13 +30,13 @@
     <div class="container">
       <div class="row text-center">
         <h2>Contact Us</h2>
-        <h3>Ready to get started? Contact us . . .</h3>
+        <h3>Thank you for your interest in Faith-Based Editorial Services. I would love to help you! Please fill out the form below, and I will reply soon.</h3>
         <form id="serverless-contact-form">
-          <input type="text" name="fname" placeholder="First Name" class="form-firstName">
-          <input type="text" name="lname" placeholder="Last Name" class="form-lastName"><br><br>
+          <input type="text" name="fname" placeholder="Name" class="form-name">
           <input type="text" name="email" placeholder="Email Address" class="form-email">
-          <input type="text" name="subject" placeholder="Subject" class="form-subject"><br><br>
-          <textarea rows="5" cols="60" name="message" placeholder="Your message here..." class="form-message"></textarea><br>
+          <input type="text" name="title" placeholder="Project Title" class="form-title">
+          <input type="text" name="genre" placeholder="Project Genre (fiction, biography, Bible study, etc.)." class="form-genre">
+          <textarea rows="5" cols="60" name="plans" placeholder="Please tell me about your plans for your manuscript." class="form-plans"></textarea><br>
           <input type="submit" name="submit" value="Submit" class="form-submit">
         </form>
       </div>
@@ -51,8 +51,12 @@
         e.preventDefault();
         // Gets the values of each field in our form. This is the data we'll send to our Lambda function.
         var formEmail = document.querySelector('.form-email').value;
-        var formSubject = document.querySelector('.form-subject').value;
-        var formMessage = document.querySelector('.form-firstName').value + " " + document.querySelector('.form-lastName').value + " " + document.querySelector('.form-message').value;
+        var formSubject = "Faith-Based Editorial Request from " + document.querySelector('.form-name').value;
+        var formMessage = 
+          document.querySelector('.form-name').value + " has submitted a request on your site. " + "\r\n\r\n" +
+          "Project Title: " + document.querySelector('.form-title').value + "\r\n" +
+          "Genre: " + document.querySelector('.form-genre').value + "\r\n\r\n" +
+          "Project Plans: " + document.querySelector('.form-plans').value
         // This is the endpoint we created in our API Gateway. This is where we make our POST request, which calls our Lambda function.
         var endpoint = 'https://1jeax6zb6g.execute-api.us-east-1.amazonaws.com/prod/ContactFormLambda';
         // Remember those form values we just grabbed? We're going to put them into an object here.
