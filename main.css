@@ -188,3 +188,7 @@ footer li img {
   height: auto;
 }
 
+form {
+  display: block;
+  margin: 20px;
+}

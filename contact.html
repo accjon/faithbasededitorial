@@ -29,12 +29,52 @@
   <section class="jumbotron">
     <div class="container">
       <div class="row text-center">
-        <h2>Faith-Based Editorial Services</h2>
-        <h3>Whether you’ve written a devotional book, biography, Bible study, or novel, a thorough edit can make your manuscript—and your message—shine. Before shopping for an agent or releasing your book on your own, allow a seasoned editor to strengthen your project.
-		<br><br>Bethany McShurley of Faith-Based Editorial Services specializes in preparing and developing writers for the Christian market.</h3>
-		<a class="btn btn-primary" href="about.html" role="button">Learn more</a>
+        <h2>Contact Us</h2>
+        <h3>Ready to get started? Contact us . . .</h3>
+        <form id="serverless-contact-form">
+          <input type="text" name="fname" placeholder="First Name" class="form-firstName">
+          <input type="text" name="lname" placeholder="Last Name" class="form-lastName"><br><br>
+          <input type="text" name="email" placeholder="Email Address" class="form-email">
+          <input type="text" name="subject" placeholder="Subject" class="form-subject"><br><br>
+          <textarea rows="5" cols="60" name="message" placeholder="Your message here..." class="form-message"></textarea><br>
+          <input type="submit" name="submit" value="Submit" class="form-submit">
+        </form>
       </div>
     </div>
+    
+  
+    <script type="text/javascript">
+      // Adds an event listener to our form. When the form is submitted, it will send data to our Lambda function, which in turn, will send us an email.
+      document.getElementById('serverless-contact-form').addEventListener('submit', sendDataToLambda);
+      // Now for the good stuff. This is the function that will send our data to AWS.
+      function sendDataToLambda(e) {
+        e.preventDefault();
+        // Gets the values of each field in our form. This is the data we'll send to our Lambda function.
+        var formEmail = document.querySelector('.form-email').value;
+        var formSubject = document.querySelector('.form-subject').value;
+        var formMessage = document.querySelector('.form-firstName').value + " " + document.querySelector('.form-lastName').value + " " + document.querySelector('.form-message').value;
+        // This is the endpoint we created in our API Gateway. This is where we make our POST request, which calls our Lambda function.
+        var endpoint = 'https://1jeax6zb6g.execute-api.us-east-1.amazonaws.com/prod/ContactFormLambda';
+        // Remember those form values we just grabbed? We're going to put them into an object here.
+        var body = {
+          email: formEmail,
+          subject: formSubject,
+          message: formMessage
+        }
+        // Here, we instantiate our Request. This is a special object used by the Fetch API so it knows where to send data, what data to send, and how to send it.
+        var lambdaRequest = new Request(endpoint, {
+          method: 'POST',
+          // Quick note: 'no-cors' mode is for development on localhost only!
+          mode: 'no-cors',
+          body: JSON.stringify(body)
+        });
+        // Call the Fetch API to make our request
+        fetch(lambdaRequest)
+          // This is where you can handle errors. This is just an example, so we won't cover that.
+          .then(response => console.log(response))
+          .catch(err => console.log(err));
+      }
+    </script>
   </section>
   <section class="container">
     <div class="row">
