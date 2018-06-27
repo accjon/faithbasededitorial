@@ -27,7 +27,7 @@ window.onload=function(){
         mode: 'no-cors',
         body: JSON.stringify(body)
     }
-    ,location.href = "index.html"
+    ,location.href = "contactResponse.html"
 );
     // Call the Fetch API to make our request
     fetch(lambdaRequest)
