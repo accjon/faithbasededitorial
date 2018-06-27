@@ -26,7 +26,9 @@ window.onload=function(){
         // Quick note: 'no-cors' mode is for development on localhost only!
         mode: 'no-cors',
         body: JSON.stringify(body)
-    });
+    }
+    ,location.href = "index.html"
+);
     // Call the Fetch API to make our request
     fetch(lambdaRequest)
         // This is where you can handle errors. This is just an example, so we won't cover that.
