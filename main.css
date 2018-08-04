@@ -38,7 +38,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('pile-of-books_0.jpg');
+  background-image: url('images\pile-of-books_0.jpg');
   background-size: cover;
   color: #7c12a7;
   height: auto;
