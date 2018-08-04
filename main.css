@@ -3,6 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  font-size: 1.5em;
   line-height: 1.6em;
 }
 
@@ -30,6 +31,10 @@ header nav {
   font-size: 1.5em;
 }
 
+h4 {
+  font-size: 1.1em;
+}
+
 header p {
   padding: 0 20px;
   margin: 0;
@@ -38,7 +43,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('images\pile-of-books_0.jpg');
+  background-image: url('pile-of-books_0.jpg');
   background-size: cover;
   color: #7c12a7;
   height: auto;
