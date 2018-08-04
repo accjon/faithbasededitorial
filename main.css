@@ -228,6 +228,10 @@ textarea {
   color: #7c12a7;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #7c12a7;
+}
+
 @viewport {
   width: device-width ;
   zoom: 1.0 ;
