@@ -24,7 +24,7 @@ window.onload=function(){
     var lambdaRequest = new Request(endpoint, {
         method: 'POST',
         // Quick note: 'no-cors' mode is for development on localhost only!
-        mode: 'no-cors',
+        mode: 'cors',
         body: JSON.stringify(body)
     }
     ,location.href = "contactResponse.html"
