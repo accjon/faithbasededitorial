@@ -4,6 +4,7 @@ window.onload=function(){
     // Now for the good stuff. This is the function that will send our data to AWS.
     function sendDataToLambda(e) {
     e.preventDefault();
+
     // Gets the values of each field in our form. This is the data we'll send to our Lambda function.
     var formEmail = document.querySelector('.form-email').value;
     var formSubject = "Faith-Based Editorial Request from " + document.querySelector('.form-name').value;
