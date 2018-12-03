@@ -12,7 +12,7 @@ window.onload=function(){
         document.querySelector('.form-name').value + " has submitted a request on your site. " + "\r\n\r\n" +
         "Project Title: " + document.querySelector('.form-title').value + "\r\n" +
         "Genre: " + document.querySelector('.form-genre').value + "\r\n\r\n" +
-        "Project Plans: " + document.querySelector('.form-plans').value
+        "About the Project: " + document.querySelector('.form-plans').value
     // This is the endpoint we created in our API Gateway. This is where we make our POST request, which calls our Lambda function.
     var endpoint = 'https://1jeax6zb6g.execute-api.us-east-1.amazonaws.com/prod/ContactFormLambda';
     // Remember those form values we just grabbed? We're going to put them into an object here.
