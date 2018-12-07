@@ -43,7 +43,7 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('pile-of-books_0.jpg');
+  background-image: url('images/jumbo2.jpg');
   background-size: cover;
   color: #1f50b9;
   height: auto;
@@ -62,8 +62,9 @@ header p {
 
 .jumbotron h3 {
  
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 300;
+  color: white;
 }
 
 section .row img {
