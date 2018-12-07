@@ -84,6 +84,12 @@ section .row img {
   height:auto;
 }
 
+#Editor img {
+  max-width:18em;
+  min-width:16em;
+  height:auto;
+}
+
 .btn.btn-primary {
   border-radius: 2px;
   border: 0px;
