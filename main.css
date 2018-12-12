@@ -53,6 +53,8 @@ header p {
   font-size: 100%;
 }
 
+.jumbotron :link {color: rgb(175, 205, 250);}
+.jumbotron :visited{color: rgb(175, 205, 250);}
 a:link {color: #1f50b9;}
 a:visited {color: #1f50b9;}
 
