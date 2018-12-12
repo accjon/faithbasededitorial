@@ -43,9 +43,9 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('images/jumbo2.jpg');
+  background-image: url('images/jumbo3.jpg');
   background-size: cover;
-  color: #1f50b9;
+  color: white;
   height: auto;
   text-shadow: 0.25px 0.25px 0.25px white;
   padding-right: 20%;
