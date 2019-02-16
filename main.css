@@ -3,6 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  font-size: 1.5em;
   line-height: 1.6em;
 }
 
@@ -30,6 +31,10 @@ header nav {
   font-size: 1.5em;
 }
 
+h4 {
+  font-size: 1.1em;
+}
+
 header p {
   padding: 0 20px;
   margin: 0;
@@ -38,15 +43,20 @@ header p {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('pile-of-books_0.jpg');
+  background-image: url('images/jumbo3.jpg');
   background-size: cover;
-  color: #7c12a7;
+  color: white;
   height: auto;
   text-shadow: 0.25px 0.25px 0.25px white;
   padding-right: 20%;
   padding-left: 10%;
   font-size: 100%;
 }
+
+.jumbotron :link {color: rgb(175, 205, 250);}
+.jumbotron :visited{color: rgb(175, 205, 250);}
+a:link {color: #1f50b9;}
+a:visited {color: #1f50b9;}
 
 .jumbotron h2 {
   padding-bottom: 0.5em;
@@ -57,8 +67,9 @@ header p {
 
 .jumbotron h3 {
  
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 300;
+  color: white;
 }
 
 section .row img {
@@ -75,10 +86,16 @@ section .row img {
   height:auto;
 }
 
+#Editor img {
+  max-width:18em;
+  min-width:16em;
+  height:auto;
+}
+
 .btn.btn-primary {
   border-radius: 2px;
   border: 0px;
-  color: #7c12a7;
+  color: #1f50b9;
   text-shadow: none;
   background-color: #ffffff;
   margin-top: 20px;
@@ -86,7 +103,7 @@ section .row img {
 
 .btn.btn-primary:hover {
   color: #ffffff;
-  background-color: #7c12a7;
+  background-color: #1f50b9;
 }
 
 .btn-secondary {
@@ -140,13 +157,13 @@ footer li img {
 
 .navbar{
   background-color: white;
-  color: #7c12a7;
+  color: #1f50b9;
   padding-bottom: 1em;
   margin: 0;
 }
 
 .navbar-inverse .navbar-brand{
-  color: #7c12a7;
+  color: #1f50b9;
 }
 
 .navbar-inverse .navbar-nav {
@@ -154,17 +171,17 @@ footer li img {
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-  background-color: rgb(156, 103, 156);
+  background-color: rgb(70, 88, 145);
 }
 
 .navbar-inverse .navbar-nav>li>a:hover
 {
-  color:#7c12a7;
+  color:#1f50b9;
 }
 
 .navbar p{
-  color: #7c12a7;
-  font-size: .6em;
+  color: #1f50b9;
+  font-size: .5em;
   margin-bottom: 5px;
 }
 
@@ -225,5 +242,16 @@ textarea {
 .navbar-inverse .navbar-brand:hover, 
 .navbar-inverse .navbar-brand:focus {
   background-color: transparent;
-  color: #7c12a7;
+  color: #1f50b9;
 }
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #1f50b9;
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+.tab{ text-indent: 40px;}
