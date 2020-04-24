@@ -126,9 +126,9 @@ section .row img {
   list-style: none;
 }
 
-.resources li img {
+.resources img {
   width:9em;
-  height:13.5em;
+  height:auto;
 }
 
 .article .col-sm-8 {
